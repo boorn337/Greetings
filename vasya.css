@@ -1,0 +1,422 @@
+body {
+  margin: 50px;
+  background-color: #1e1e1e;
+  font-family: Federo;
+  min-width: 1803px;
+  max-width: 1803px;
+}
+header {
+  height: 1499px;
+  max-width: 1803px;
+  background-image: url("./image/newyork.png");
+  background-size: auto 1499px;
+  overflow: hidden;
+}
+.HeaderTextDecoration {
+  display: flex;
+  width: auto;
+}
+.lineDecoration {
+  width: 1803px;
+  font-weight: 100;
+  margin: 15px 12px;
+  color: #c5ff6c;
+  font-size: 18px;
+}
+header h4:nth-child(2n) {
+  color: white;
+}
+#OverImage {
+  position: relative;
+}
+#vasya {
+  position: absolute;
+  right: 548px;
+  z-index: 1;
+}
+#hend {
+  position: relative;
+  left: 630px;
+  top: 275px;
+  z-index: 3;
+}
+#OverImage span {
+  position: relative;
+  z-index: 2;
+}
+#OverImage h1 {
+  color: #c5ff6c;
+  font-size: 369px;
+  margin: 0 76px;
+  font-weight: 400;
+}
+
+#ScrollContainer {
+  right: 40px;
+  position: relative;
+  margin-top: 220px;
+  z-index: 2;
+}
+.ScrollText {
+  display: flex;
+  width: max-content;
+  height: 70px;
+  align-items: center;
+}
+.ScrollText p {
+  margin: 0 10px;
+  font-size: 52px;
+  font-weight: 200;
+}
+#GreenScrollText {
+  border-radius: 7px;
+  position: absolute;
+  bottom: 1px;
+  background-color: #c5ff6c;
+  transform: rotate(9.53deg);
+  z-index: 2;
+}
+#BlackScrollText {
+  border-radius: 15px;
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  background-image: url(./image/textImg.jpg);
+  background-position: 340px 350px;
+  transform: rotate(-3.82deg);
+  z-index: 3;
+}
+
+.ScrollText {
+  overflow: hidden;
+}
+
+.ScrollText p {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+  }
+}
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+#Gradient {
+  height: 535px;
+  margin: auto;
+  content: " ";
+  background-image: linear-gradient(to top, #1e1e1e, rgba(0, 0, 0, 0));
+  z-index: 10;
+}
+#Wishes {
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  margin: 0 80px;
+}
+#Wishes img {
+  width: 771px;
+  height: 578.46px;
+}
+#WishesFromAs {
+  margin-left: 128px;
+  max-width: 861px;
+  color: white;
+}
+#WishesFromAs h1 {
+  font-size: 64px;
+  font-weight: 500;
+}
+#WishesFromAs p {
+  font-size: 40px;
+  font-weight: lighter;
+}
+#PerfectGuy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+#PerfectGuy h1 {
+  font-size: 64px;
+  color: white;
+  font-weight: 100;
+}
+#ImgScroll {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 440px;
+  width: 1803px;
+  background-color: #c5ff6c;
+  overflow-y: hidden;
+  position: relative;
+  margin: auto;
+}
+#ImgScroll img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  transition: 1s;
+  opacity: 0.9;
+  object-fit: cover;
+}
+#ImgScroll img:hover {
+  width: 420px;
+  height: 420px;
+  opacity: 1;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev,
+.next {
+  cursor: pointer;
+  /* position: absolute; */
+  /* width: auto; */
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 0 30px 30px 0;
+  color: #000000;
+}
+.prev {
+  left: 0;
+  position: absolute;
+  border-radius: 30px 0 0 30px;
+  color: #000000;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+#MyGreeting {
+  position: relative;
+  bottom: 55px;
+  z-index: 0;
+  overflow: hidden;
+  background-image: url("./image/newyork_we.png");
+  height: 1499px;
+  max-width: 1803px;
+  background-size: auto 1499px;
+}
+#MyGreeting #Gradient {
+  height: 300px;
+  background-image: linear-gradient(to top, #1e1e1e, rgba(0, 0, 0, 0));
+}
+#TeamWishes {
+  position: relative;
+  display: flex;
+  margin-top: 340px;
+  align-items: center;
+  justify-content: center;
+}
+#TeamWishes p {
+  color: white;
+  font-size: 38px;
+  font-weight: 400;
+  width: 400px;
+  text-align: center;
+}
+#TeamWishes img {
+  height: 861px;
+  width: 694px;
+  margin: 0 50px;
+}
+#TeamWishes em {
+  color: white;
+  font-size: 28px;
+}
+#TeamWishes div:first-of-type em {
+  margin-left: 345px;
+}
+#TeamWishes div:first-of-type p {
+  margin-bottom: 117px;
+}
+#FriendsGreeting {
+  position: relative;
+  /* bottom: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.headline {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+}
+.Line {
+  display: flex;
+  flex-direction: row;
+}
+.Block {
+  display: flex;
+  border: 1px solid #c5ff6c;
+  max-width: 700px;
+  max-height: 380px;
+  margin: 20px;
+  background-color: #313131;
+  justify-content: space-between;
+  padding: 30px;
+}
+.Block img {
+  width: 222px;
+  height: 344px;
+}
+.Greeting {
+  position: relative;
+  color: white;
+  width: 60%;
+  height: 410px;
+}
+.Greeting p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.Greeting p:nth-child(1) {
+  min-height: 290px;
+}
+.Greeting p:nth-child(2) {
+  float: right;
+}
+#Movie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  z-index: 10;
+}
+
+video {
+  width: 1020px;
+  height: 608.02px;
+  background-color: #c5ff6c;
+  padding: 20px;
+}
+
+#FinalGreeting {
+  width: 50%;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#FinalGreeting p {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+#FinalGreeting h6 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #c5ff6c;
+  margin: 80px 0 0 0;
+}
+.Vlad img {
+  object-fit: cover;
+}
+.Vlad p {
+  font-size: 17px;
+}
+.Block.Vlad .Greeting p:last-child {
+  font-size: 24px;
+}
+.Block.Yulia .Greeting p:last-child {
+  font-size: 24px;
+}
+.Yulia img {
+  object-fit: cover;
+}
+.Yulia p {
+  font-size: 18px;
+}
+#footer {
+  height: 690px;
+  max-width: 1803px;
+  background-image: url("./image/newyork.png");
+  background-size: auto 1499px;
+  overflow: hidden;
+}
+#footerbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+}
+#lviv {
+  font-size: 28px;
+  width: 90%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+#footerbox .lineDecoration {
+  width: 96px;
+}
+#footer #Gradient {
+  height: 300px;
+  background-image: linear-gradient(to bottom, #1e1e1e, rgba(0, 0, 0, 0));
+}
